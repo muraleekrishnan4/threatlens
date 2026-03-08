@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "ThreatLens",
+  "version": "1.3",
+  "description": "Professional IoC Scanner and Reputation Checker.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://api.abuseipdb.com/*",
+    "https://dns.google/*"
+  ],
+  "icons": {
+    "16": "/assets/icon.png",
+    "48": "/assets/icon.png",
+    "128": "/assets/icon.png"
+  },
+  "action": {
+    "default_title": "ThreatLens",
+    "default_icon": {
+      "16": "/assets/icon.png",
+      "48": "/assets/icon.png",
+      "128": "/assets/icon.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "styles.css",
+        "/assets/icon.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
