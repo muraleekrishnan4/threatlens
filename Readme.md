@@ -1,10 +1,10 @@
-# \# 🛡️ ThreatIntel Scanner Pro
+# \# 🛡️ ThreatLens
 
 # 
 
 # <p align="center">
 
-# &nbsp; <img src="assets/icon.svg" alt="ThreatIntel Scanner Pro" width="96"/>
+# &nbsp; <img src="assets/icon.png" alt="ThreatLens" width="96"/>
 
 # </p>
 
@@ -94,7 +94,7 @@
 
 # &nbsp;  ```bash
 
-# &nbsp;  git clone https://github.com/YOUR\_USERNAME/threatintel-scanner-pro.git
+# &nbsp;  git clone https://github.com/muraleekrishnan4/threat-lens.git
 
 # &nbsp;  ```
 
@@ -168,7 +168,7 @@
 
 # ```
 
-# threatintel-scanner-pro/
+# threat-lens/
 
 # ├── manifest.json       # Chrome Extension Manifest V3
 
@@ -186,7 +186,7 @@
 
 # └── assets/
 
-# &nbsp;   └── icon.svg        # Source SVG icon
+# &nbsp;   └── icon.png        # Source PNG icon
 
 # ```
 
